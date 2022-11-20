@@ -9,6 +9,6 @@ public class Main {
         t1.join();
         t2.join();
         t3.join();
-        System.out.println("Total: " + Lucky.count);
+        System.out.println("Total: " + Lucky.count.get());
     }
 }
