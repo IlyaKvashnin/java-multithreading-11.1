@@ -8,8 +8,8 @@ public class Lucky {
         public void run() {
                 while (luckyX.get() < 999999) {
                     final int x = luckyX.incrementAndGet();
-                    if ((x % 10) + (x / 10) % 10 + (x / 100) % 10 == (x / 1000)
-                            % 10 + (x / 10000) % 10 + (x / 100000) % 10) {
+                    if ((((x % 10) + (x / 10) % 10 + (x / 100) % 10 == (x / 1000)
+                            % 10 + (x / 10000) % 10 + (x / 100000) % 10)) && x <= 999999) {
                         System.out.println(x);
                         count.incrementAndGet();
                     }
